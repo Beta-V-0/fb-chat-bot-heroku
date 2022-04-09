@@ -515,28 +515,28 @@ class ChatBot(Client):
                 reply = "Not at all"
                 sendMsg()
             elif("how are you" in msg):
-                reply="I am good. What's about you?"
+                reply = "I am good. What's about you?"
                 sendMsg()
             elif("hlw" in msg):
-                reply="hi"
+                reply = "hi"
                 sendMsg()
             elif("hey" in msg):
-                reply="Hi, how are you?"
+                reply = "Hi, how are you?"
                 sendMsg()
             elif("ok" in msg):
-                reply="🤩"
+                reply = "🤩"
                 sendMsg()
             elif("same to you" in msg):
-                reply="Thank you 😊"
+                reply = "Thank you 😊"
                 sendMsg()
             elif("Welcome" in msg):
-                reply="It's my Pleasure 😊"
+                reply = "It's my Pleasure 😊"
                 sendMsg()
             elif("tq" in msg):
-                reply="Welcome 😊"
+                reply = "Welcome 😊"
                 sendMsg()
             elif("tqsm" in msg):
-                reply="Welcome 😊"
+                reply = "Welcome 😊"
                 sendMsg()
             elif("help" in msg):
                 reply = "Sure! What should I do?"
@@ -566,19 +566,19 @@ class ChatBot(Client):
                 reply = "Okay😊🙂"
                 sendMsg()
             elif ("thank you" in msg):
-                reply = "You're welcome😊🙂"
+                reply = "You're welcome ❤️"
                 sendMsg()
             elif ("thanks" in msg):
-                reply = "You're welcome🙂"
+                reply = "You're welcome🙂 ❤️"
                 sendMsg()
             elif ("well done" in msg):
-                reply = "Thanks🙂"
+                reply = "Thanks❤️"
                 sendMsg()
             elif ("wow" in msg):
-                reply = "🙂😊"
+                reply = "❤️😊"
                 sendMsg()
             elif ("wow" in msg):
-                reply = "🙂😊"
+                reply = "🙂❤️"
                 sendMsg()
             elif ("bye" in msg):
                 reply = "bye👋 Take care"
@@ -599,7 +599,7 @@ class ChatBot(Client):
                 reply = "Hi"
                 sendMsg()
             elif (msg == "hi"):
-                reply = "Hello! How can I help you?"
+                reply = "Hello! Hello! 👋"
                 sendMsg()
 
         except:
@@ -674,45 +674,44 @@ class ChatBot(Client):
             except:
                 pass
 
-
     def onColorChange(self, mid=None, author_id=None, new_color=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
-        reply="You changed the theme ✌️😎"
+        reply = "You changed the theme ✌️😎"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onEmojiChange(self, mid=None, author_id=None, new_color=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
-        reply="You changed the emoji 😎. Great!"
+        reply = "You changed the emoji 😎. Great!"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onImageChange(self, mid=None, author_id=None, new_color=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
-        reply="This image looks nice. 💕🔥"
+        reply = "This image looks nice. 💕🔥"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onNicknameChange(self, mid=None, author_id=None, new_nickname=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
-        reply=f"You just changed the nickname to {new_nickname} But why? 😁🤔😶"
+        reply = f"You just changed the nickname to {new_nickname} But why? 😁🤔😶"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onReactionRemoved(self, mid=None, author_id=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
-        reply="You just removed reaction from the message."
+        reply = "You just removed reaction from the message."
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onCallStarted(self, mid=None, caller_id=None, is_video_call=None, thread_id=None, thread_type=None, ts=None, metadata=None, msg=None, ** kwargs):
-        reply="You just started a call 📞🎥"
+        reply = "You just started a call 📞🎥"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onCallEnded(self, mid=None, caller_id=None, is_video_call=None, thread_id=None, thread_type=None, ts=None, metadata=None, msg=None, ** kwargs):
-        reply="Bye 👋🙋‍♂️"
+        reply = "Bye 👋🙋‍♂️"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
     def onUserJoinedCall(mid=None, joined_id=None, is_video_call=None,
                          thread_id=None, thread_type=None, **kwargs):
-        reply=f"New user with user_id {joined_id} has joined a call"
+        reply = f"New user with user_id {joined_id} has joined a call"
         self.send(Message(text=reply), thread_id=thread_id,
                   thread_type=thread_type)
 
@@ -726,8 +725,8 @@ cookies = {
 }
 
 
-client=ChatBot("",
-                "", session_cookies=cookies)
+client = ChatBot("",
+                 "", session_cookies=cookies)
 print(client.isLoggedIn())
 
 try:
