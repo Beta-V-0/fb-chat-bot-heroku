@@ -607,6 +607,9 @@ class ChatBot(Client):
             elif (msg == "i love you too"):
                 reply = "i love you more than 3000 💙"
                 sendMsg()
+            elif (msg == "happy birthday"):
+                reply = "Happy Happy 😁 Brithday Day to You❣️"
+                sendMsg()
 
         except:
             pass
