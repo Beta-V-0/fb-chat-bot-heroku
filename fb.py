@@ -601,6 +601,12 @@ class ChatBot(Client):
             elif (msg == "hi"):
                 reply = "Hello! Hello! 👋"
                 sendMsg()
+            elif (msg == "i love you"):
+                reply = "i love you 3000 💙"
+                sendMsg()
+            elif (msg == "i love you too"):
+                reply = "i love you more than 3000 💙"
+                sendMsg()
 
         except:
             pass
