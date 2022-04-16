@@ -539,7 +539,7 @@ class ChatBot(Client):
                 reply = "Welcome 😊"
                 sendMsg()
             elif("help" in msg):
-                reply = "Sure! What should I do?"
+                reply = "Sure! I am here for that"
                 sendMsg()
             elif("clever" in msg):
                 reply = "Yes, i am clever. hope you will be clever soon."
@@ -610,7 +610,15 @@ class ChatBot(Client):
             elif (msg == "happy birthday"):
                 reply = "Happy Happy 😁 Brithday Day to You❣️"
                 sendMsg()
-
+            elif (msg == "k cha"):
+                reply = "Thakai chaa aani timro sunau?"
+                sendMsg()
+            elif (msg == "❤️"):
+                reply = "❤️"
+                sendMsg()
+            elif (msg == "Amir Gareeb"):
+                reply = "Hello, This Your Personal Assistant"
+                sendMsg()
         except:
             pass
 
